@@ -1,0 +1,17 @@
+def Programa2():
+
+  set_digital_out(0, True)
+
+
+  popup("El control será compartido con un controlador externo (ROS2). Presione OK para continuar.", 
+        title="Aviso", warning=False, error=False)
+
+  # 3. Espera de 5 segundos
+  sleep(5)
+
+  # 4. Mensaje en consola (opcional)
+  textmsg("Esperando control externo desde ROS2")
+
+  # 5. Aquí entra el External Control (se maneja en PolyScope)
+  
+end
