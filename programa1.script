@@ -1,0 +1,125 @@
+def programa_iniciales():
+
+  a = 0.2
+  v = 0.1
+
+
+  popup("Letra S", title="Iniciales", warning=False)
+
+  movej(p[0.20, 0.00, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.20, 0.00, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.24, 0.00, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.24, 0.04, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.20, 0.04, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.20, 0.08, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.24, 0.08, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  sleep(1)
+
+  popup("Letra V", title="Iniciales", warning=False)
+
+  movej(p[0.28, 0.08, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.30, 0.00, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.32, 0.08, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  sleep(1)
+
+  popup("Letra C", title="Iniciales", warning=False)
+
+  movej(p[0.36, 0.00, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.32, 0.00, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.32, 0.08, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.36, 0.08, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  sleep(1)
+
+  popup("Letra A", title="Iniciales", warning=False)
+
+  movej(p[0.40, 0.00, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.42, 0.08, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.44, 0.00, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  movej(p[0.41, 0.04, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.43, 0.04, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  sleep(2)
+
+
+  popup("Letra D", title="Iniciales", warning=False)
+
+  movej(p[0.20, 0.15, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.20, 0.23, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.24, 0.21, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.24, 0.17, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.20, 0.15, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  popup("Letra F", title="Iniciales", warning=False)
+
+  movej(p[0.28, 0.15, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.28, 0.23, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.32, 0.23, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  movej(p[0.28, 0.19, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.31, 0.19, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  popup("Letra S", title="Iniciales", warning=False)
+
+  movel(p[0.36, 0.15, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.40, 0.15, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.40, 0.19, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.36, 0.19, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.36, 0.23, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.40, 0.23, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  popup("Letra L", title="Iniciales", warning=False)
+
+  movej(p[0.44, 0.23, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.44, 0.15, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.48, 0.15, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  sleep(2)
+
+
+  popup("Letra M", title="Iniciales", warning=False)
+
+  movej(p[0.20, 0.30, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.20, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.22, 0.34, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.24, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.24, 0.30, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  popup("Letra E", title="Iniciales", warning=False)
+
+  movel(p[0.28, 0.30, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.28, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.32, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  movej(p[0.28, 0.34, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.31, 0.34, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  movej(p[0.28, 0.30, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.32, 0.30, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  popup("Letra R", title="Iniciales", warning=False)
+
+  movel(p[0.36, 0.30, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.36, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.40, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.40, 0.34, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.36, 0.34, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  movej(p[0.36, 0.34, 0.20, 0, 3.14, 0], a=0.5, v=0.5)
+  movel(p[0.40, 0.30, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  popup("Letra C", title="Iniciales", warning=False)
+
+  movel(p[0.44, 0.30, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.40, 0.30, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.40, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+  movel(p[0.44, 0.38, 0.20, 0, 3.14, 0], a=a, v=v)
+
+  sleep(2)
+
+end
+
+programa_iniciales()
