@@ -1,0 +1,46 @@
+def programa_pick_place():
+  # Variables de velocidad y aceleracion
+  a = 0.2
+  v = 0.1
+
+  # Configuracion de carga (1kg)
+  set_payload(1.0, [0,0,0.1])
+
+  while (True):
+    # --- RECOGIDA 1 ---
+    popup("Yendo a Pick 1", title="Paso 3", warning=False)
+    movej(p[0.20, -0.10, 0.30, 0, 3.14, 0], a=0.5, v=0.5) # Punto Arriba
+    movel(p[0.20, -0.10, 0.15, 0, 3.14, 0], a=a, v=v)     # Punto Pick
+    set_standard_digital_out(1, True)                    # Activar Garra
+    sleep(1)
+    movel(p[0.20, -0.10, 0.30, 0, 3.14, 0], a=a, v=v)     # Subir
+    
+    # --- RECOGIDA 2 ---
+    popup("Yendo a Pick 2", title="Paso 3", warning=False)
+    movej(p[0.30, -0.10, 0.30, 0, 3.14, 0], a=0.5, v=0.5) # Punto Arriba
+    movel(p[0.30, -0.10, 0.15, 0, 3.14, 0], a=a, v=v)     # Punto Pick
+    set_standard_digital_out(1, True)
+    sleep(1)
+    movel(p[0.30, -0.10, 0.30, 0, 3.14, 0], a=a, v=v)     # Subir
+
+    # --- ENTREGA (PLACE) ---
+    popup("Yendo a Place", title="Paso 3", warning=False)
+    movej(p[0.25, 0.10, 0.30, 0, 3.14, 0], a=0.5, v=0.5)  # Punto Arriba Place
+    movel(p[0.25, 0.10, 0.15, 0, 3.14, 0], a=a, v=v)      # Soltar abajo
+    set_standard_digital_out(1, False)                   # Desactivar Garra
+    sleep(1)
+    movel(p[0.25, 0.10, 0.30, 0, 3.14, 0], a=a, v=v)      # Subir
+
+    # --- ESPERA DE CONFIRMACION ---
+    popup("Ciclo finalizado. Active DI_0 para repetir", title="Paso 3", blocking=True)
+    
+    # Espera hasta que la entrada 0 sea verdadera (Alto)
+    while (get_standard_digital_in(0) == False):
+      sync()
+    end
+    
+    popup("Reiniciando...", title="Paso 3", warning=False)
+  end
+end
+
+programa_pick_place()
